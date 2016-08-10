@@ -14,9 +14,9 @@ The application targets Android SDK 24 and is compatible back to API 14 (Ice Cre
 
 ## Dependencies  
 The complete IoT demonstration requires:
-* a device, or several devices, to monitor and manage (in this case the WiFire)  
+* a device, or several devices, to monitor and manage (see the [Creator Wifire application](https://github.com/CreatorDev/creator-wifire-app))  
 * a device management server supporting suitable Lightweight machine to machine (LWM2M) protocols (see the [Creator device server](https://github.com/CreatorDev/DeviceServer))  
-* a mobile application to configure and manage devices remotely via the device server (see the Creator mobile application)  
+* a mobile application to configure and manage devices remotely via the device server  
 
 
 The main functions of the mobile application are:  
