@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016, Imagination Technologies Limited and/or its affiliated group companies
+  ~ and/or licensors
+  ~
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, with or without modification, are permitted
+  ~ provided that the following conditions are met:
+  ~
+  ~ 1. Redistributions of source code must retain the above copyright notice, this list of conditions
+  ~     and the following disclaimer.
+  ~
+  ~ 2. Redistributions in binary form must reproduce the above copyright notice, this list of
+  ~     conditions and the following disclaimer in the documentation and/or other materials provided
+  ~     with the distribution.
+  ~
+  ~ 3. Neither the name of the copyright holder nor the names of its contributors may be used to
+  ~     endorse or promote products derived from this software without specific prior written
+  ~     permission.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR
+  ~ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+  ~ FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+  ~ CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  ~ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  ~ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+  ~ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY
+  ~ WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  ~
+  -->
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/devicesLayout"
+    style="@style/HobbyistFragmentStyle"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/dots"
+        style="@style/Dots"
+        android:src="@drawable/dots_5"
+        />
+
+    <ImageView
+        android:id="@+id/ledsAnimation"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="18dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/connectionFailed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/device_setup_failed"
+            android:textSize="@dimen/connecting_text_size"
+            android:textColor="@color/nice_gray"
+            android:gravity="center"
+            android:enabled="false"
+            android:visibility="gone"
+            tools:visibility="visible"
+            />
+
+        <TextView
+            android:id="@+id/connecting"
+            android:gravity="center"
+            android:layout_below="@id/connectionFailed"
+            style="@style/ConnectingTextView"
+            android:text="@string/connecting_to"
+            android:textColor="@color/nice_gray"
+            android:enabled="false"
+            />
+
+        <TextView
+            android:layout_below="@id/connecting"
+            style="@style/ConnectingTextView"
+            android:text="@string/taking_long"
+            android:textColor="@color/nice_gray"
+            android:gravity="center"
+            android:enabled="false"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            >
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cancel"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                style="@style/CreatorButton"
+                />
+
+            <Button
+                android:id="@+id/tryAgainButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:text="@string/retry_setup"
+                android:layout_margin="5dp"
+                style="@style/CreatorButton"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/doneButtonContainer"
+            android:layout_alignParentBottom="true"
+            >
+
+            <Button
+                android:id="@+id/doneButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/done"
+                android:layout_margin="5dp"
+                android:visibility="invisible"
+                style="@style/CreatorButton"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

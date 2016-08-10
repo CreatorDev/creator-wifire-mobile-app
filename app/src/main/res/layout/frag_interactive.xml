@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016, Imagination Technologies Limited and/or its affiliated group companies
+  ~ and/or licensors
+  ~
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, with or without modification, are permitted
+  ~ provided that the following conditions are met:
+  ~
+  ~ 1. Redistributions of source code must retain the above copyright notice, this list of conditions
+  ~     and the following disclaimer.
+  ~
+  ~ 2. Redistributions in binary form must reproduce the above copyright notice, this list of
+  ~     conditions and the following disclaimer in the documentation and/or other materials provided
+  ~     with the distribution.
+  ~
+  ~ 3. Neither the name of the copyright holder nor the names of its contributors may be used to
+  ~     endorse or promote products derived from this software without specific prior written
+  ~     permission.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR
+  ~ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+  ~ FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+  ~ CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  ~ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  ~ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+  ~ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY
+  ~ WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  ~
+  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <!--<ImageButton-->
+    <!--android:id="@+id/refresh"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:background="@null"-->
+    <!--android:tint="#676766"-->
+    <!--android:src="@drawable/ic_refresh_black_48dp"-->
+    <!--/>-->
+    <ProgressBar
+        android:id="@+id/prog"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:indeterminate="true"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:id="@+id/led_container"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/led_off"
+            android:id="@+id/led1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/led_off"
+            android:id="@+id/led2"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/led1"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/led_off"
+            android:id="@+id/led3"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/led2"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/led_off"
+            android:id="@+id/led4"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/led3"
+            android:padding="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/led_container"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout2">
+
+        <RelativeLayout
+            android:id="@+id/sw1_container"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sw1"
+                android:src="@drawable/button_off"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sw1"
+                android:layout_centerHorizontal="true"
+                android:text="SW1"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/sw1_container"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sw2"
+                android:src="@drawable/button_on"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sw2"
+                android:text="SW2"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!--<Button-->
+        <!--android:id="@+id/reboot"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_margin="10dp"-->
+        <!--style="@style/CreatorButton"-->
+        <!--android:text="@string/reboot"/>-->
+
+    <TextView
+        android:text="CPU temp:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tempValue"
+        android:layout_alignLeft="@+id/led_container"
+        android:layout_alignStart="@+id/led_container"
+        android:id="@+id/textView2"/>
+
+    <TextView
+        android:id="@+id/tempValue"
+        android:text="@string/na"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignRight="@+id/relativeLayout2"
+        android:layout_alignEnd="@+id/relativeLayout2"/>
+
+    <TextView
+        android:text="Potentiometer value:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/led_container"
+        android:layout_alignStart="@+id/led_container"
+        android:layout_below="@id/textView2"
+        />
+
+    <TextView
+        android:id="@+id/potentiometerValue"
+        android:text="@string/na"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignRight="@+id/relativeLayout2"
+        android:layout_alignEnd="@+id/relativeLayout2"/>
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016, Imagination Technologies Limited and/or its affiliated group companies
+  ~ and/or licensors
+  ~
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, with or without modification, are permitted
+  ~ provided that the following conditions are met:
+  ~
+  ~ 1. Redistributions of source code must retain the above copyright notice, this list of conditions
+  ~     and the following disclaimer.
+  ~
+  ~ 2. Redistributions in binary form must reproduce the above copyright notice, this list of
+  ~     conditions and the following disclaimer in the documentation and/or other materials provided
+  ~     with the distribution.
+  ~
+  ~ 3. Neither the name of the copyright holder nor the names of its contributors may be used to
+  ~     endorse or promote products derived from this software without specific prior written
+  ~     permission.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR
+  ~ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+  ~ FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+  ~ CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  ~ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  ~ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+  ~ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY
+  ~ WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  ~
+  -->
+
+
+<resources>
+    <dimen name="creator_logo_height">120dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="navigation_drawer_width">280dp</dimen>
+    <dimen name="edit_text_padding">15dp</dimen>
+    <dimen name="action_bar_height">56dp</dimen>
+    <dimen name="subtitle_text_size">18sp</dimen>
+    <dimen name="small_label_text_size">20sp</dimen>
+    <dimen name="very_small_label_text_size">18sp</dimen>
+    <dimen name="very_very_small_label_text_size">14sp</dimen>
+    <dimen name="lint_text_size">16sp</dimen>
+    <dimen name="navigation_drawer_fragment_layout_margin">25dp</dimen>
+    <dimen name="stroke_thickness">1dp</dimen>
+    <dimen name="toggle_button_text_size">18sp</dimen>
+    <dimen name="standard_space_between_views">12dp</dimen>
+    <dimen name="rounded_edit_text_size">16sp</dimen>
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="help_information_text_size">17sp</dimen>
+    <dimen name="connecting_text_size">18sp</dimen>
+    <dimen name="login_to_device_space">10dp</dimen>
+</resources>

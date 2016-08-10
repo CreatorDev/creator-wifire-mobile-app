@@ -1,0 +1,162 @@
+<!--
+  ~ Copyright (c) 2016, Imagination Technologies Limited and/or its affiliated group companies
+  ~ and/or licensors
+  ~
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, with or without modification, are permitted
+  ~ provided that the following conditions are met:
+  ~
+  ~ 1. Redistributions of source code must retain the above copyright notice, this list of conditions
+  ~     and the following disclaimer.
+  ~
+  ~ 2. Redistributions in binary form must reproduce the above copyright notice, this list of
+  ~     conditions and the following disclaimer in the documentation and/or other materials provided
+  ~     with the distribution.
+  ~
+  ~ 3. Neither the name of the copyright holder nor the names of its contributors may be used to
+  ~     endorse or promote products derived from this software without specific prior written
+  ~     permission.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR
+  ~ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+  ~ FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+  ~ CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  ~ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  ~ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+  ~ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY
+  ~ WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  ~
+  -->
+<resources>
+
+    <style name="EditTextStyle" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/edittext_background</item>
+    </style>
+
+    <style name="HobbyistActivityStyle">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="SlidingDrawer">
+        <item name="android:background">@color/white</item>
+        <item name="android:choiceMode">singleChoice</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:cacheColorHint">#00000000</item>
+    </style>
+
+    <style name="ConfigureWifiRadioButtonStyle">
+        <item name="android:background">@drawable/white_pink_selector</item>
+        <item name="android:textColor">@drawable/gray_pink_text_color_selector</item>
+        <item name="android:textSize">@dimen/toggle_button_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="RoundedEditText">
+        <item name="android:textSize">@dimen/rounded_edit_text_size</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">@dimen/edit_text_padding</item>
+        <!--<item name="android:background">@drawable/stroke_shape</item>-->
+    </style>
+
+    <style name="HobbyistFragmentStyle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_margin">@dimen/navigation_drawer_fragment_layout_margin</item>
+        <item name="android:layout_gravity">top</item>
+    </style>
+
+    <style name="DeviceDetailValue">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="DeviceDetailText" parent="DeviceDetailValue">
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:textColor">@color/device_detail_gray</item>
+    </style>
+
+    <style name="SetupGuideText">
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">@dimen/very_small_label_text_size</item>
+        <item name="android:textColor">@color/theme_dark_grey</item>
+    </style>
+
+    <style name="SetupGuideTextWithPadding" parent="SetupGuideText">
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="SetupGuideTextCentered" parent="SetupGuideTextWithPadding">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="SetupGuideTextCenteredSmall" parent="SetupGuideTextWithPadding">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/very_very_small_label_text_size</item>
+    </style>
+
+    <style name="Dots">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ConnectingTextView">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/connecting_text_size</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="DrawerArrowToggle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/white</item>
+    </style>
+
+    <style name="Toolbar">
+        <item name="android:background">@color/theme_purple</item>
+        <item name="android:layout_height">@dimen/action_bar_height</item>
+    </style>
+
+    <style name="RetryButtonStyle" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="errorMessageStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@color/light_nice_gray</item>
+    </style>
+
+    <style name="BaseButton"></style>
+
+    <style name="CreatorButton" parent="BaseButton">
+        <item name="android:background">@drawable/base_button_selector</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textColor">@drawable/base_button_text_color_selector</item>
+    </style>
+
+    <style name="Link">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/link_text_color_selector</item>
+        <item name="android:textSize">@dimen/lint_text_size</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:padding">10dp</item>
+    </style>
+</resources>

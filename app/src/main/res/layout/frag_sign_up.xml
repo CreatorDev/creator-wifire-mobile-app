@@ -1,0 +1,80 @@
+<!--
+  ~ Copyright (c) 2016, Imagination Technologies Limited and/or its affiliated group companies
+  ~ and/or licensors
+  ~
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, with or without modification, are permitted
+  ~ provided that the following conditions are met:
+  ~
+  ~ 1. Redistributions of source code must retain the above copyright notice, this list of conditions
+  ~     and the following disclaimer.
+  ~
+  ~ 2. Redistributions in binary form must reproduce the above copyright notice, this list of
+  ~     conditions and the following disclaimer in the documentation and/or other materials provided
+  ~     with the distribution.
+  ~
+  ~ 3. Neither the name of the copyright holder nor the names of its contributors may be used to
+  ~     endorse or promote products derived from this software without specific prior written
+  ~     permission.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR
+  ~ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+  ~ FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+  ~ CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  ~ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  ~ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+  ~ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY
+  ~ WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  ~
+  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/HobbyistFragmentStyle"
+    >
+
+    <EditText
+        style="@style/RoundedEditText"
+        android:id="@+id/username"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:textColorHint="@color/gray"
+        android:hint="@string/username"
+        android:layout_marginBottom="10dp"
+        />
+
+    <EditText
+        style="@style/RoundedEditText"
+        android:id="@+id/emailAddress"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/gray"
+        android:hint="@string/email_address"
+        android:layout_marginBottom="10dp"
+        />
+
+    <EditText
+        style="@style/RoundedEditText"
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/gray"
+        android:hint="@string/password"
+        android:layout_marginBottom="25dp"
+        />
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_height="@dimen/button_height"
+        android:layout_width="match_parent"
+        android:text="@string/sign_up_button_text"
+        android:enabled="false"
+        style="@style/CreatorButton"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyle"
+        android:indeterminate="true"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+</LinearLayout>

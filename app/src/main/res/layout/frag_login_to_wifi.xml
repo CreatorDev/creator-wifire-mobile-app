@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016, Imagination Technologies Limited and/or its affiliated group companies
+  ~ and/or licensors
+  ~
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, with or without modification, are permitted
+  ~ provided that the following conditions are met:
+  ~
+  ~ 1. Redistributions of source code must retain the above copyright notice, this list of conditions
+  ~     and the following disclaimer.
+  ~
+  ~ 2. Redistributions in binary form must reproduce the above copyright notice, this list of
+  ~     conditions and the following disclaimer in the documentation and/or other materials provided
+  ~     with the distribution.
+  ~
+  ~ 3. Neither the name of the copyright holder nor the names of its contributors may be used to
+  ~     endorse or promote products derived from this software without specific prior written
+  ~     permission.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR
+  ~ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+  ~ FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+  ~ CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  ~ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  ~ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+  ~ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY
+  ~ WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  ~
+  -->
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.imgtec.hobbyist.activities.CreatorActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbarStyle="outsideOverlay"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp"
+        >
+
+        <ImageView
+            android:id="@+id/dots"
+            style="@style/Dots"
+            android:src="@drawable/dots_4"
+            />
+
+        <ImageView
+            android:id="@+id/leds12Animation"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/yourDevice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            style="@style/SetupGuideTextCentered"
+            android:textStyle="bold"
+            tools:text="your Device"
+            />
+
+        <TextView
+            android:id="@+id/headerTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/please_enter_the_password_for_your"
+            style="@style/SetupGuideText"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/yourWifiNetwork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/standard_space_between_views"
+            style="@style/SetupGuideText"
+            android:gravity="center"
+            tools:text="your WiFi network"
+            />
+
+        <EditText
+            style="@style/RoundedEditText"
+            android:id="@+id/ssidField"
+            android:inputType="text"
+            android:textColorHint="@color/gray"
+            android:hint="@string/wifi_name"
+            android:layout_marginBottom="@dimen/standard_space_between_views"
+            android:visibility="gone"
+            tools:visibility="visible"
+            />
+
+        <EditText
+            style="@style/RoundedEditText"
+            android:id="@+id/passwordField"
+            android:inputType="textPassword"
+            android:textColorHint="@color/gray"
+            android:hint="@string/password"
+            android:layout_marginBottom="@dimen/standard_space_between_views"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/securityProtocolChoice"
+            android:background="@drawable/stroke_shape"
+            android:padding="@dimen/stroke_thickness"
+            android:layout_marginBottom="@dimen/standard_space_between_views"
+            >
+
+            <RadioButton
+                style="@style/ConfigureWifiRadioButtonStyle"
+                android:id="@+id/wep"
+                android:text="@string/wep"
+                android:layout_margin="2dp"
+                />
+
+            <RadioButton
+                style="@style/ConfigureWifiRadioButtonStyle"
+                android:id="@+id/wpa"
+                android:text="@string/wpa"
+                android:layout_margin="2dp"
+                />
+
+            <RadioButton
+                style="@style/ConfigureWifiRadioButtonStyle"
+                android:id="@+id/wpa2"
+                android:text="@string/wpa2"
+                android:checked="true"
+                android:layout_margin="2dp"
+                />
+
+            <RadioButton
+                style="@style/ConfigureWifiRadioButtonStyle"
+                android:id="@+id/open"
+                android:text="@string/open"
+                android:layout_margin="2dp"
+                />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/networkingProtocolChoice"
+            android:background="@drawable/stroke_shape"
+            android:padding="@dimen/stroke_thickness"
+            android:layout_marginBottom="@dimen/standard_space_between_views"
+            android:visibility="gone"
+            tools:visibility="visible"
+            >
+
+            <RadioButton
+                style="@style/ConfigureWifiRadioButtonStyle"
+                android:id="@+id/dhcp"
+                android:text="@string/dhcp_upper_letters"
+                android:checked="true"
+                android:layout_margin="2dp"
+                />
+
+            <RadioButton
+                style="@style/ConfigureWifiRadioButtonStyle"
+                android:id="@+id/staticIP"
+                android:text="@string/static_ip_upper_first_letter"
+                android:layout_margin="2dp"
+                />
+        </RadioGroup>
+
+        <EditText
+            style="@style/RoundedEditText"
+            android:id="@+id/staticIpField"
+            android:inputType="phone"
+            android:textColorHint="@color/gray"
+            android:hint="@string/static_ip_hint"
+            android:layout_marginBottom="@dimen/standard_space_between_views"
+            android:visibility="gone"
+            tools:visibility="visible"
+            />
+
+        <EditText
+            style="@style/RoundedEditText"
+            android:id="@+id/staticDnsField"
+            android:inputType="phone"
+            android:textColorHint="@color/gray"
+            android:hint="@string/static_dns"
+            android:layout_marginBottom="@dimen/standard_space_between_views"
+            android:visibility="gone"
+            tools:visibility="visible"
+            />
+
+        <EditText
+            style="@style/RoundedEditText"
+            android:id="@+id/staticNetmaskField"
+            android:inputType="phone"
+            android:textColorHint="@color/gray"
+            android:hint="@string/static_netmask"
+            android:layout_marginBottom="@dimen/standard_space_between_views"
+            android:visibility="gone"
+            tools:visibility="visible"
+            />
+
+        <EditText
+            style="@style/RoundedEditText"
+            android:id="@+id/staticGatewayField"
+            android:inputType="phone"
+            android:textColorHint="@color/gray"
+            android:hint="@string/static_gateway"
+            android:layout_marginBottom="@dimen/standard_space_between_views"
+            android:visibility="gone"
+            tools:visibility="visible"
+            />
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_height="@dimen/button_height"
+            android:layout_width="match_parent"
+            android:text="@string/connect_button_text"
+            android:layout_marginTop="@dimen/standard_space_between_views"
+            style="@style/CreatorButton"
+            />
+
+        <LinearLayout
+            android:id="@+id/linksLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/selectAnotherNetwork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Link"
+                android:text="@string/select_another_network"
+                android:layout_weight="0.5"
+                />
+
+            <Button
+                android:id="@+id/manualConfiguration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Link"
+                android:text="@string/manual_configuration"
+                android:layout_weight="0.5"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

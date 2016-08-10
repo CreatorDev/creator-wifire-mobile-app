@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016, Imagination Technologies Limited and/or its affiliated group companies
+  ~ and/or licensors
+  ~
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, with or without modification, are permitted
+  ~ provided that the following conditions are met:
+  ~
+  ~ 1. Redistributions of source code must retain the above copyright notice, this list of conditions
+  ~     and the following disclaimer.
+  ~
+  ~ 2. Redistributions in binary form must reproduce the above copyright notice, this list of
+  ~     conditions and the following disclaimer in the documentation and/or other materials provided
+  ~     with the distribution.
+  ~
+  ~ 3. Neither the name of the copyright holder nor the names of its contributors may be used to
+  ~     endorse or promote products derived from this software without specific prior written
+  ~     permission.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR
+  ~ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+  ~ FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+  ~ CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  ~ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  ~ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+  ~ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY
+  ~ WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  ~
+  -->
+
+
+<resources>
+    <string name="app_name">Creator WiFIRE Mobile</string>
+
+    <!-- common -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="please_wait_with_dots">Please wait …</string>
+    <string name="wifire">Wi-Fire</string>
+    <string name="retry">Retry</string>
+    <string name="reboot">Reboot</string>
+    <string name="na">N/A</string>
+    <string name="tap_again_to_exit">Tap again to exit the app</string>
+    <string name="title_activity_flow">a</string>
+
+    <!-- Login, signup-->
+    <string name="log_in_button_text">Sign in</string>
+    <string name="sign_up_title">Sign up</string>
+    <string name="sign_up_button_text">Create account</string>
+    <string name="retry_button_text">Retry</string>
+    <string name="username">Username</string>
+    <string name="email_address">Email address</string>
+    <string name="password">Password</string>
+    <string name="logging_in">Logging in…</string>
+    <string name="signing_up">Signing up…</string>
+    <string name="email_address_is_required">Email address is required!</string>
+    <string name="password_is_required">Password is required!</string>
+    <string name="username_too_short">Username must be longer than 5 characters</string>
+    <string name="incorrect_password_character_count">Incorrect password characters count</string>
+    <string name="login_with_creator_account">Log in with your Creator Account</string>
+    <string name="account_created_successfully">Account created.</string>
+    <string name="keep_me_signed_in">Keep me signed in</string>
+    <string name="welcome">Welcome</string>
+    <string name="login_to_device_hint">If you don\'t already know the password for your WiFIRE\'s wifi setup mode you\'ll need to connect a USB micro cable to the UART header and run a terminal package on your computer (115200,8,n,1). For more information see the WiFIRE section of docs.creatordev.io</string>
+
+    <!-- Connected devices -->
+
+    <!-- Menu items -->
+    <string name="commands">Commands</string>
+    <string name="application_logs">Application Logs</string>
+    <string name="connected_devices">Connected devices</string>
+    <string name="setup_device">Set up a device</string>
+    <string name="configure_wifi">Configure Wi-Fi</string>
+    <string name="help">Help</string>
+    <string name="about">About</string>
+    <string name="log_out">Log out</string>
+    <string name="my_device">My WiFire</string>
+    <string name="connect_button_text">Connect</string>
+
+    <!-- connecting fragment -->
+    <string name="troubleshooting">Troubleshooting</string>
+    <string name="device_setup">Device setup</string>
+
+    <!-- Configure Wi-Fi, device info -->
+    <string name="static_ip_hint">Static IP</string>
+    <string name="static_dns">DNS</string>
+    <string name="static_netmask">Netmask</string>
+    <string name="static_gateway">Gateway</string>
+    <string name="setup_mode">Setup mode</string>
+    <string name="select_device">Select device</string>
+    <string name="log_in_to_wifi">Log in to WiFi</string>
+    <string name="log_in_to_device">Log in to device</string>
+    <string name="wep">WEP</string>
+    <string name="wpa">WPA</string>
+    <string name="wpa2">WPA2</string>
+    <string name="open">Open</string>
+    <string name="dhcp">dhcp</string>
+    <string name="dhcp_upper_letters">DHCP</string>
+    <string name="static_ip">static</string>
+    <string name="static_ip_upper_first_letter">Static</string>
+    <string name="device_details">Device Details</string>
+    <string name="mac">MAC address</string>
+    <string name="serial_number_abbreviation">SN</string>
+    <string name="device_type">Device type</string>
+    <string name="software_version">SW version</string>
+    <string name="name">Name</string>
+
+    <string name="wireless_name_is_required">Wi-Fi name is required!</string>
+    <string name="static_ip_is_required">IP is required!</string>
+    <string name="dns_is_required">DNS is required!</string>
+    <string name="netmask_is_required">Netmask is required!</string>
+    <string name="gateway_is_required">Gateway is required!</string>
+
+    <!-- connected / no connected  devices fragment -->
+    <string name="interact_with_selected_button_text">Interact with selected</string>
+    <string name="no_connected_devices_found">No connected devices found</string>
+    <string name="no_connected_devices_setup_info">To setup a fresh board or re-run setup process on board press button below.</string>
+    <string name="no_connected_devices_info_retry">If you have a configured board please ensure it is powered before hitting the RETRY button.</string>
+
+    <!-- Interactive fragment -->
+    <string name="celsius_value">%1$s \u2103</string>
+    <string name="volt_value">%1$s V</string>
+
+
+    <!-- Help and About -->
+    <string name="about_you_can_use">The Creator WiFIRE Mobile application can be used to configure a Digilent WiFIRE development board with the Creator IoT framework. Use the mobile application to sign up for a Creator account, configure the WiFi connection on your WiFIRE board, and to register the board to your account.</string>
+    <string name="about_section2">For more information about Creator or the Creator WiFIRE mobile and embedded applications visit <a href="https://docs.creatordev.io">docs.creatordev.io</a> where you\'ll find step by step guides to download and install the embedded code on the WiFIRE board as well as details about the Creator IoT framework.</string>
+  <string name="about_all_other_products">We make no representations or warranties that the Creatordev.io Creator device server, Creatordev.io developer console, or Creatordev.io services will function in accordance with any advertised or published data, performance specifications or parameters. Any incorporation of the Creatordev.io services into or use in conjunction with end-use products is wholly at your own risk and we accept no responsibility or liability for your use of Creatordev.io services in such manner. You will be solely responsible for ensuring the end-use product is compliant with applicable laws and regulations for any such product.
+We make no warranty, representation, or guarantee regarding the information contained herein or on our website or the suitability of our products and services for any particular purpose. We make no warranty that the Creatordev.io services will be of a particular standard of quality, fit for a particular purpose or be free of any errors, bugs or mistakes. Nor do we assume any liability whatsoever (to the extent permitted by law) arising out of the application or use of the Creatordev.io services or any component part thereof.
+We do not grant, explicitly or implicitly, to any party any patent rights, licenses, or any other IP rights, relating to the use of, or technology within, this development platform.
+We reserve the right to make corrections, enhancements, improvements and other changes to its products and services, and to discontinue any product or service at any time without notice.</string>
+
+
+    <!-- New setup guide -->
+    <string name="setup_device_info_wifi">Setup will connect your WiFire board onto %s, so that it can communicate with Creator Device Server.</string>
+    <string name="setup_device_info_no_wifi">No WiFi detected. Please connect the mobile to a WiFi network to perform the device setup.</string>
+    <string name="start_setup">Start setup</string>
+    <string name="continue_button">Continue</string>
+    <string name="wifi_name">WiFi name</string>
+    <string name="choose_board">Select the device that you want to set up.</string>
+    <string name="check_connectivity">Networking Error. Check if you are connected to board\'s WiFi network</string>
+    <string name="check_wifire_connection">Error connecting to the WiFIRE board. Retry the WiFIRE’s password or check that WiFi is connected to your WiFIRE</string>
+    <string name="application_restart">MakeItFlow has to restart for reinitialize Flow Cloud connection.</string>
+    <string name="retry_setup">Retry device setup</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="setup_mode_text">Enter Wi-Fi setup mode by holding down the two buttons highlighted above and pressing the RESET button. Release the buttons when LD1 starts to flash.</string>
+    <string name="please_enter_the_password_for_your_device">Please enter the password for your device</string>
+    <string name="please_enter_the_password_for_your">Please enter the password for your</string>
+    <string name="select_another_network">Select another network</string>
+    <string name="manual_configuration">Manual configuration</string>
+    <string name="connecting_to">Connecting…</string>
+    <string name="device_setup_succeeded">Device connected</string>
+  <string name="device_setup_failed">If LD1 or LD3 are flashing, Wi-Fi failed to connect. Please retry.\n\n
+    If LD4 is WiFire may have troubles connecting to Creator Device Server. Continue to wait or retry.\n</string>
+    <string name="taking_long">Your Device is taking a long time to connect to FlowCloud</string>
+    <string name="wrong_board_wifi_password">Incorrect password for&#160;</string>
+    <string name="board_wifi_not_available">Lost connection to&#160;</string>
+    <string name="board_connected_choice_message">Do you wish to connect your device to a network?</string>
+    <string name="you_are_connected_to_your_device">You are connected to your device</string>
+    <string name="please_select_your_wifi_network">Please select your WiFi network.</string>
+    <string name="device_is_offline">Device is offline</string>
+    <string name="device_is_offline_msg">Your device went offline. You cannot interact with it anymore.</string>
+    <string name="back_to_connected_devices">Back to \"Connected devices\" screen</string>
+    <string name="ssid_is_wrong">WiFi name is wrong</string>
+    <string name="back_to_set_up_a_device">Back to \"Set up a device\" screen</string>
+    <string name="connection_failure_try_again">Connection failure. Try again</string>
+    <string name="fetching_certificates">Fetching certificate from Device Server.</string>
+    <string name="fetching_certificate">Fetching certificate</string>
+    <string name="scanning_info">Scanning for WiFIRE boards running the Creator Wifire App in setup mode</string>
+    <string name="unable_to_configure_network_title">Unable to configure network</string>
+    <string name="unable_to_configure_network_message">Network configuration of %s must be completed in the Android WiFi settings. Go to WiFi settings and forget that network before continuing</string>
+    <string name="go_to_wifi_settings">Go to WiFi settings</string>
+
+    <!--Errors-->
+    <string name="error_unknown">Unknown error</string>
+    <string name="error_network">Unable to connect to Creator Device Server. Please check your Wi-Fi connection to ensure you have access to the internet.</string>
+    <string name="error_unauthorized">The email or password that you entered is incorrect.</string>
+    <string name="error_conflict_data">Account already in use. Enter another username or email address.</string>
+    <string name="error_invalid_response">Unexpected response from server.</string>
+    <string name="error_login_unauthorized">Invalid username or password.</string>
+    <string name="error_login_not_found">User with specified name not found.</string>
+
+    <!-- Splash screen -->
+    <string name="splash_screen_title">POWERED BY</string>
+    <string name="splash_screen_message">Imagination Systems</string>
+    <string name="location_permission_rationale">Android M prevents apps from scanning for available wifi networks unless the Location service mode is enabled.</string>
+    <string name="enable_location_message">Please enable Location from your device\'s settings to ensure WiFire boards will be found during a WiFi scan.</string>
+    <string name="go_to_settings">Go to settings</string>
+    <string name="ok">Ok</string>
+    <string name="location_disabled">Location services are disabled</string>
+    <string name="location_oermission_required">Location permission required</string>
+
+
+</resources>
