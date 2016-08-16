@@ -32,7 +32,7 @@
 
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.imgtec.hobbyist">
+          package="com.imgtec.creator.iup">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -79,9 +79,5 @@
             android:theme="@style/HobbyistActionBarTheme"
             android:windowSoftInputMode="adjustPan">
         </activity>
-
-        <meta-data
-            android:name="io.fabric.ApiKey"
-            android:value="ef6da314a0543b864ed25f2ccbeb471b45166fb9"/>
     </application>
 </manifest>
