@@ -30,8 +30,8 @@
  */
 
 buildscript {
+
     repositories {
-        maven { url 'https://maven.fabric.io/public' }
         mavenCentral()
         jcenter()
     }
@@ -41,6 +41,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.neenbedankt.android-apt'
 
 repositories {
+    maven { url 'https://maven.fabric.io/public' }
 
 }
 
@@ -75,7 +76,6 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
             signingConfig signingConfigs.release
-            debuggable true
         }
         debug {
 
