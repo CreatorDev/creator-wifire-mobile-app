@@ -30,7 +30,7 @@ The main functions of the mobile application are:
     - read the WiFire's analogue input value (simulated by an onboard potentiometer)  
     - read the WiFire's pushbuttons state  
 
-**Important.** In order to interact with the WiFire board this application requires the WiFire board's softAP password which is retrieved by using the command line console with the WiFire board in config mode. See [the WiFire hardware setup page](https://github.com/CreatorDev/creator-wifire-app/blob/master/doc/wiFireHardwareSetup.md). Note that the WiFire password will change on every hex upload to the WiFire device.   
+**Important.** In order to interact with the WiFire board this application requires the WiFire board's softAP password which is retrieved by using the command line console with the WiFire board in config mode, (see [the WiFire hardware setup page](https://github.com/CreatorDev/creator-wifire-app/blob/master/doc/wiFireHardwareSetup.md)). Note that the WiFire password will change on every hex upload to the WiFire device.   
 
 ### Creating a developer account
 In order to use the mobile application you'll need to log into it. This requires a *Creator developer account*. On the application login screen there is a *Create Account* button which navigates to the [*creator.io*](https://console.creatordev.io/#/login) account sign up page. To create a developer account a unique user name, email address and password are required.   
