@@ -23,7 +23,7 @@ The main functions of the mobile application are:
 
 - to open a Creator developer account for [creatordev.io](https://console.creatordev.io/#/login)  
 - to connect the WiFire device to your Wi-Fi network. The mobile application uses the creatordev.io developer account credentials gained above to access the device server developer API and to retrieve the PSK that will in turn be passed to the WiFire board as part of its configuration process.  
-- to obtain a PSK (currently this application is designed to use only PSKs), and then provision the WiFire device to a Creator device server. *Note the bootstrap server URL is hardcoded into the application and points to the creatordev.io device server instance.*  
+- to obtain a PSK (currently this application is designed to use only PSKs), and then provision the WiFire device to a Creator device server. *Note the bootstrap server URL is hardcoded into the application and points to the creatordev.io device server instance. All bootstrap server settings are retrieved automatically.*  
 - to interact with the WiFire device application objects and resources via the device server to:  
     - set/reset the WiFire's LEDs  
     - read the WiFire's CPU core temperature  
