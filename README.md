@@ -8,7 +8,7 @@ The Creator WiFire mobile application is is part of the Creator project which ai
 The application targets Android SDK 24 and is compatible back to API 14 (Ice Cream Sandwich).  
 
 **Note.**  
-*During the provisioning process (explained below) the mobile application will configure the WiFire device WiFi to change networks. This requires the user to grant Location permissions to the application. The mobile application **does not use  location services** but is required by the Android permission model to acquire Location permissions.*
+During the provisioning process (explained below) the mobile application will configure the WiFire device WiFi to change networks. This requires the user to grant Location permissions to the application. The mobile application *does not use location services* but is required by the Android permission model to acquire Location permissions.
 
 
 
