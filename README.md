@@ -15,20 +15,22 @@ The application targets Android SDK 24 and is compatible back to API 14 (Ice Cre
 ## Dependencies  
 The complete IoT demonstration requires:
 * a device, or several devices, to monitor and manage (see the [Creator Wifire application](https://github.com/CreatorDev/creator-wifire-app))  
-* a device management server supporting suitable Lightweight machine to machine (LWM2M) protocols (see the [Creator device server](https://github.com/CreatorDev/DeviceServer))  
+* a device management server supporting suitable Lightweight machine to machine (LWM2M) protocols (see the [Creator device server](https://github.com/CreatorDev/DeviceServer)). *Note that an instance of the Creator device server is hosted on the [creatordev.io](http://creatordev.io/) site*.  
 * a mobile application to configure and manage devices remotely via the device server  
 
 
 The main functions of the mobile application are:  
 
 - to open a Creator developer account for [creatordev.io](https://console.creatordev.io/#/login)  
-- to connect the WiFire device to your Wi-Fi network  
-- to obtain a PSK and then provision the WiFire device to a Creator device server  
-- to interact with the WiFire device application objects and resources via the device server to:
-    - set/reset the WiFire's LEDs
-    - read the WiFire's CPU core temperature
-    - read the WiFire's analogue input value (simulated by an onboard potentiometer)
-    - read the WiFire's pushbuttons state
+- to connect the WiFire device to your Wi-Fi network. The mobile application uses the creatordev.io developer account credentials gained above to access the device server developer API and to retrieve the PSK that will in turn be passed to the WiFire board as part of its configuration process.  
+- to obtain a PSK (currently this application is designed to use only PSKs), and then provision the WiFire device to a Creator device server. *Note the bootstrap server URL is hardcoded into the application and points to the creatordev.io device server instance.*  
+- to interact with the WiFire device application objects and resources via the device server to:  
+    - set/reset the WiFire's LEDs  
+    - read the WiFire's CPU core temperature  
+    - read the WiFire's analogue input value (simulated by an onboard potentiometer)  
+    - read the WiFire's pushbuttons state  
+
+**Important.** In order to interact with the WiFire board this application requires the WiFire board's softAP password which is retrieved by using the command line console with the WiFire board in config mode. See [the WiFire hardware setup page](https://github.com/CreatorDev/creator-wifire-app/blob/master/doc/wiFireHardwareSetup.md). Note that the WiFire password will change on every hex upload to the WiFire device.   
 
 ### Creating a developer account
 In order to use the mobile application you'll need to log into it. This requires a *Creator developer account*. On the application login screen there is a *Create Account* button which navigates to the [*creator.io*](https://console.creatordev.io/#/login) account sign up page. To create a developer account a unique user name, email address and password are required.   
