@@ -35,7 +35,7 @@ import com.google.gson.annotations.SerializedName;
 
 public class LightControl extends Pojo {
 
-  @SerializedName("On")
+  @SerializedName("On/Off")
   @Expose
   private boolean onOff;
 
