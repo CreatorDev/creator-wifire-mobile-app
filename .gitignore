@@ -26,6 +26,7 @@ app/fabric.properties
 .idea/runConfigurations.xml
 .idea/scopes/scope_settings.xml
 .idea/vcs.xml
+.idea/markdown-navigator
 *.iml
 
 # OS-specific files
